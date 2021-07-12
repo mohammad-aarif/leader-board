@@ -14,12 +14,14 @@ hr{
 /* Top Players Style */
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .container{
     background: #fff;
-    width: 870px;
-    /* justify-content: center; */
+    width: 72%;
+    margin-top: 30px;
+    border-radius: 5px;
 }
 .section-title{
     color:blueviolet;
@@ -66,4 +68,47 @@ main{
     text-decoration: none;
     color: rgb(119, 118, 119);
     margin: 0;
+}
+/*--------------------
+    Course Style
+---------------------*/
+.courses{
+    display: flex;
+}
+.course{
+    padding: 30px;
+}
+.course img{
+    width: 290px;
+}
+.course h3, p{
+    margin:0;
+}
+.course p{
+    font-size: .8em;
+    color: rgb(255, 74, 101);
+}
+.course-info{
+    display: flex;
+    align-items: center;
+}
+.course-info .star{
+    color: rgb(252, 187, 9);
+}
+.course-info .ratings-num{
+    color:rgb(131, 131, 131);
+    margin-left: 5px;
+}
+.course-info .star i:last-child{
+    color: lightgray;
+}
+.course-info .duration{
+    background: rgb(252, 209, 216);
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: rgb(255, 74, 101);
+    margin-left: 20px;
+}
+.duration p i{
+    padding-right: 5px;
 }
