@@ -74,6 +74,7 @@ main{
 ---------------------*/
 .courses{
     display: flex;
+    flex-wrap: wrap;
 }
 .course{
     padding: 30px;
@@ -111,4 +112,25 @@ main{
 }
 .duration p i{
     padding-right: 5px;
+}
+/* Responsive */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+    }
+    .blog-area{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+        padding: 30px;
+    }
+    .courses{
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
